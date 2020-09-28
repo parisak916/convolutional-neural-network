@@ -60,7 +60,7 @@ Y_test = np_utils.to_categorical(Y_test, nb_classes)
 
 # -- Initializing the values for the convolution neural network
 
-nb_epoch = 2  # kept very low! Please increase if you have GPU
+nb_epoch = 2  
 
 batch_size = 64
 # number of convolutional filters to use
@@ -203,7 +203,6 @@ for i in range(slice):
     plt.axis('off')
     
 # Function for constructing the convolution neural network
-# Feel free to add parameters, if you want
 
 def build_model(num_conv = 1, conv_activation = "relu", num_dense = 1, dense_activation  = "relu", 
                dropout = True, max_pooling = True):
